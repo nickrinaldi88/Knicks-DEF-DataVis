@@ -8,12 +8,20 @@ sns.set()
 
 knicks = pd.read_csv('knicks.csv')
 
-graph = sns.relplot(x=knicks.Year, y=knicks.Rank, kind="line", data=knicks)
+# graph = sns.relplot(x=knicks.Year, y=knicks.League_Rank,
+#                     kind="line", data=knicks)
 
-plt.gca.invert_yaxis()
+sns.set_style("ticks")
+
+sns.lineplot(data=knicks, x=knicks.Year, y=knicks.League_Rank)
+
+plt.ylim(reversed(plt.ylim()))
+
+# plt.gca.invert_yaxis()
 # at each point, display Rating score
 
 # Reverse y axis,
+
 
 plt.show()
 
@@ -23,3 +31,5 @@ plt.show()
 # print(df)
 
 # sns.set_theme()  # look up themes
+
+

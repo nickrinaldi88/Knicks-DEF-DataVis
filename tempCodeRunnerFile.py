@@ -1,5 +1,3 @@
-df = sns.load_dataset("knicks.csv")
 
-# print(df)
-
-# sns.set_theme()  # look up themes
+# graph = sns.relplot(x=knicks.Year, y=knicks.League_Rank,
+#                     kind="line", data=knicks)
