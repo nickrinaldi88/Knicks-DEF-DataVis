@@ -1,5 +1,0 @@
-# 1. Test out all the themes
-# 2. decide on a themes
-# 3. save to png file
-# 4. do photoshop work
-# 5. create github pages for the website, load in image in html
